@@ -1,5 +1,9 @@
 module.exports = {
     productionSourceMap: false,
+
+    // publicPath: process.env.NODE_ENV === 'production'
+    //     ? '/easter-app/'
+    //     : '/'
     chainWebpack: config => {
         // svg rule loader
         const svgRule = config.module.rule('svg') // 找到svg-loader
@@ -13,7 +17,6 @@ module.exports = {
               symbolId: 'icon-[name]',
             })
     },
-    // publicPath: process.env.NODE_ENV === 'production'
-    //     ? '/easter-app/'
-    //     : '/'
+
+    publicPath: '/easter-app/dist'
 }
