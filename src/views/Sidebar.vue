@@ -98,6 +98,9 @@
             ]),
             isCollapse() {
                 return !this.sidebar.opened
+            },
+            publicPath() {
+                return publicPath
             }
         },
         data() {
