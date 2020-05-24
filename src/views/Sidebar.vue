@@ -5,7 +5,7 @@
                 :default-active="$route.path"
                  @select="handleMenuSelect"
                  :collapse="isCollapse">
-            <a href="/" style="margin-top: 32px; margin-bottom: 32px"  ref="empty">
+            <a :href="publicPath" style="margin-top: 32px; margin-bottom: 32px"  ref="empty">
                 <svg-icon icon-class="easter-logo" style="width: 40px;height: 40px; color: #42b983"></svg-icon>
             </a>
             <el-menu-item index="/home">
@@ -86,6 +86,8 @@
     import { statistics } from '@/api/login'
     import ScrollBar from "@/components/ScrollBar/index";
     import { Message } from 'element-ui'
+
+    import {publicPath} from '../../vue.config'
 
     export default {
         name: "Sidebar",
