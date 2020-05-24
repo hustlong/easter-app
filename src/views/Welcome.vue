@@ -15,14 +15,27 @@
         如果你热衷于技术贡献，愿意参与开发后台服务、小程序、Android、iOS、WebApp等<br>
         请联系<a class="el-link--primary">long.yang@ipp.ac.cn</a>.
       </p>
+
+      <br>
+      <el-divider> 项目贡献人员 </el-divider>
+      <el-row type="flex" justify="center">
+        <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+          <el-avatar :src="require('@/assets/images/biglong.jpg')" :size="64" shape="square"></el-avatar>
+          <p>biglong</p>
+        </el-col>
+        <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+          <el-avatar :src="require('@/assets/images/sinber.jpg')" :size="64" shape="square"></el-avatar>
+          <p>sinber</p>
+        </el-col>
+      </el-row>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Welcome',
-}
+  export default {
+    name: 'Welcome',
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
