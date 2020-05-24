@@ -46,7 +46,7 @@
             <div v-for="pojo of hot" :key="pojo.member.id">
                 <el-row style="padding-top: 8px">
                     <el-col :span="4">
-                        <div style="display: inline-grid">
+                        <div style="display: inline-grid" @click="$router.push({path: '/userhome/'+pojo.member.id})">
                             <el-avatar
                                     :size="40"
                                     :src="pojo.member.icon"

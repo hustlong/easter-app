@@ -91,7 +91,6 @@
             }
         },
         mounted() {
-            this.loading = true
             this.getBlogList(1)
         },
         methods: {
@@ -121,6 +120,7 @@
                 this.getBlogList(val)
             },
             getBlogList(page) {
+                this.loading = true
                 blogList(this.memberId, page).then( response => {
                     console.log(response.data)
                     this.size = response.data.pageSize

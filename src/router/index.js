@@ -19,6 +19,7 @@ import PasswordUpdate from "@/views/layout/PasswordUpdate";
 import LoginLog from "@/views/layout/LoginLog";
 import CommentDetail from "@/views/layout/CommentDetail";
 import SearchUser from "@/views/layout/SearchUser";
+import UserHome from "@/views/layout/UserHome";
 
 
 Vue.use(VueRouter)
@@ -163,6 +164,17 @@ const routes = [
           hasBack: true,
           scrollTop: 0,
           title: '评论详情',
+          id: 1
+        }
+      },
+      {
+        path: 'userhome/*',
+        name: 'UserHome',
+        component: UserHome,
+        meta: {
+          hasBack: true,
+          scrollTop: 0,
+          title: 'TA的主页',
           id: 1
         }
       },

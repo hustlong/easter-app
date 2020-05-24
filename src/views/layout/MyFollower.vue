@@ -4,7 +4,7 @@
             <div v-for="pojo of followerList" :key="pojo.followTime">
                 <el-row style="padding-top: 20px">
                     <el-col :span="4">
-                        <div>
+                        <div  @click="$router.push({path: '/userhome/'+pojo.id})">
                             <el-avatar
                                     :size="40"
                                     :src="pojo.icon"

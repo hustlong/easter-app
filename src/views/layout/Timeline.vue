@@ -15,7 +15,7 @@
             <div v-else v-for="pojo of PojoTimelineList" :key="pojo.id">
                 <el-row style="padding-top: 20px">
                     <el-col :span="5">
-                        <div>
+                        <div @click="$router.push({path: '/userhome/'+pojo.memberId})">
                             <el-avatar
                                     :size="56"
                                     :src="pojo.icon"
