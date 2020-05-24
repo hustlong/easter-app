@@ -33,6 +33,7 @@
                                     size="mini"
                                     icon="el-icon-delete"
                                     @click="confirmDelete(pojo.id)"
+                                    v-if="pojo.memberId === selfId"
                                     round>删除</el-button>
                         </el-row>
                         <div class="timeline-item-content">
